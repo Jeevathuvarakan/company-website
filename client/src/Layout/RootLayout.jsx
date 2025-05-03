@@ -9,14 +9,14 @@ function RootLayout() {
       <header>
         <Header />
       </header>
-      <div>
+      <div className="pt-[60px]">
         <Outlet />
       </div>
       <footer>
         <Footer />
       </footer>
     </div>
-  )
+  );
 }
 
 export default RootLayout
