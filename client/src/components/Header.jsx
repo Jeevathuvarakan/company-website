@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <>
-      <div className="px-[16px] fixed z-50 top-0 py-[8px] bg-white text-black w-full font-LibreFranklin ">
+      <div className="xl:px-[200px] px-[16px] fixed z-50 top-0 py-[8px] bg-white text-black w-full font-LibreFranklin ">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <Link to="/" onClick={() => window.scrollTo({ top: 0 })}>
