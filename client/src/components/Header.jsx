@@ -4,8 +4,7 @@ import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import MobileMenu from "./MobileMenu";
 import { HeaderItems, Logo } from "../constants/Data";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa6";
+
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,7 +38,7 @@ function Header() {
 
   return (
     <>
-      <div className="xl:px-[200px] px-[16px] fixed z-50 top-0 py-[8px] bg-white text-black w-full font-LibreFranklin ">
+      <div className="xl:px-[180px] px-[16px] fixed z-50 top-0 py-[8px] bg-white text-black w-full font-LibreFranklin ">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <Link to="/" onClick={() => window.scrollTo({ top: 0 })}>
@@ -82,7 +81,7 @@ function Header() {
               </div>
             </div>
             <div className="flex  items-center">
-              <button className="text-[16px] text-[#0067ff] border border-solid-[1px] px-[8px] py-[4px] border-[#0067ff] rounded-[4px] font-medium">
+              <button className=" lg:block hidden text-[16px] text-[#0067ff] border border-solid-[1px] px-[8px] py-[4px] border-[#0067ff] rounded-[4px] font-medium  hover:text-black hover:border-black">
                 Call To Action
               </button>
 
@@ -104,7 +103,7 @@ function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed lg:hidden block top-0 w-full h-full bg-black z-20 transition-transform duration-500 ease-in-out ${
+        className={`fixed lg:hidden block top-0 w-full h-full bg-white z-20 transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } md:w-full w-[100%]`}
       >

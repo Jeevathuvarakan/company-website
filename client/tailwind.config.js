@@ -19,6 +19,7 @@ export default {
 
       fontFamily: {
         LibreFranklin: ["Libre Franklin", "sans-serif"],
+        DMSans: ["DM Sans", "sans-serif"],
       },
     },
   },
