@@ -16,12 +16,12 @@ function HomeImpect() {
                             </div>
                             <div>
                                 <p className='text-[16px] leading-6'>We have made a significant impact in our community through our
-                                     non-profit organization. By providing services and support to those in need, we have
-                                      created a positive change. Our efforts have helped to improve the lives of many and
-                                       we are committed to continuing to make a difference.</p>
+                                    non-profit organization. By providing services and support to those in need, we have
+                                    created a positive change. Our efforts have helped to improve the lives of many and
+                                    we are committed to continuing to make a difference.</p>
                             </div>
                         </div>
-                        <div  className='flex gap-[18px] py-[100px]'>
+                        <div className='flex gap-[18px] py-[100px]'>
                             <div className='flex flex-col gap-[10px] px-[50px] border-r-[2px]'>
                                 <div>
                                     <span className='text-[48px] font-semibold leading-5'><CountUp start={0} end={20} duration={5} separator="," /></span>
@@ -43,12 +43,23 @@ function HomeImpect() {
                                 </div>
                                 <div className='flex text-center'>People to take action </div>
                             </div>
-                            <div className='flex flex-col gap-[10px] px-[50px]'>
+                            <div className='flex flex-col gap-[10px] px-[20px]'>
                                 <div>
                                     <span className='text-[48px] font-semibold leading-5'><CountUp start={0} end={5246} duration={5} separator="," /></span>
                                     <span className='text-[48px] font-semibold leading-5'></span>
                                 </div>
                                 <div className='flex text-center'>Partner organizations </div>
+                            </div>
+                        </div>
+                        <div className='flex gap-[18px] py-[20px] rounded-2xl bg-[#66B40B] p-12'>
+                            <div className='p-6'>
+                                <h3 className='text-[40px]  text-white'>We can create a better tomorrow</h3>
+                                <p className='text-[20px] text-white'>Every dollar counts and helps us bring hope and essential resources to those in need.</p>
+                            </div>
+                            <div className='items-justify p-6'>
+                                <button className=" text-[18px] font-semibold text-black  px-[18px] py-[14px] bg-[#fff] rounded-[5px]   hover:bg-[#46512a] hover:text-white">
+                                    Scheduling a call
+                                </button>
                             </div>
                         </div>
                     </div>
