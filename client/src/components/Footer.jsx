@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="xl:px-[180px] px-[16px] py-[32px] bg-[#000080] font-LibreFranklin text-white">
+    <div className="xl:px-[180px] px-[16px] py-[32px] bg-[#0f1131] font-LibreFranklin text-white">
       <div className="container mx-auto py-[10px]">
         <div className="flex lg:flex-row flex-col gap-[20px] justify-between">
           <div className="flex flex-col gap-[16px]">
