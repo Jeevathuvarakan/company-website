@@ -3,6 +3,8 @@ import HeroBanner from "../components/HeroBanner";
 import HomeAbout from "../components/HomeAbout";
 import Footer from "../components/Footer";
 import HomeImpect from "../components/HomeImpect";
+import HomeContactUs from "../components/HomeContactUs";
+import HomeCarriers from "../components/HomeCarriers";
 
 function Home() {
   return (
@@ -10,6 +12,8 @@ function Home() {
       <HeroBanner />
       <HomeAbout/>
       <HomeImpect/>
+      <HomeCarriers/>
+      <HomeContactUs/>
     </div>
   );
 }

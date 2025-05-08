@@ -18,7 +18,7 @@ function Footer() {
           <div className="flex flex-col gap-[16px]">
             <div className="flex gap-[12px] items-center">
               <img
-                src={WhitweLogo}
+                // src={WhitweLogo}
                 alt="logo"
                 className="object-cover w-[300px] h-[50px]"
               />
