@@ -12,12 +12,12 @@ function HomeImpect() {
                         </div>
                         <div className="flex gap-[18px] gap-x-[100px]">
                             <div>
-                                <h2 className="text-[3rem] font-semibold tracking-[-1px]">
+                                <h2 className="md:text-[48px] text-[32px] xl:w-[408px] w-full font-bold text-[#2C3A04] capitalize">
                                     The impact we have made till this date
                                 </h2>
                             </div>
                             <div>
-                                <p className="text-[16px] leading-6">
+                                <p className="xl:w-[408px] w-full text-[#46512A] text-[16px]">
                                     We have made a significant impact in our community through our
                                     non-profit organization. By providing services and support to
                                     those in need, we have created a positive change. Our efforts
@@ -76,8 +76,8 @@ function HomeImpect() {
                                     resources to those in need.
                                 </p>
                             </div>
-                            <div className="items-justify p-6">
-                                <button className=" text-[18px] font-semibold text-black  px-[18px] py-[14px] bg-[#fff] rounded-[5px]   hover:bg-[#46512a] hover:text-white">
+                            <div className="flex p-6 items-center justify-center">
+                                <button className=" text-[18px] font-semibold text-[#000]  px-[18px] py-[14px] bg-[#fff] rounded-[5px]   hover:bg-[#46512a] hover:text-[#fff]">
                                     Scheduling a call
                                 </button>
                             </div>

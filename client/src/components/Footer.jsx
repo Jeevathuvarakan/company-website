@@ -25,7 +25,7 @@ function Footer() {
               {/* <h3 className="text-[24px] font-semibold ">Codeme Labs</h3> */}
             </div>
             <p className="lg:w-[596px] w-full text-[16px]  font-medium">
-            Codeme Labs delivers smart, scalable software solutions tailored to your needs. 
+            Myself delivers smart, scalable software solutions tailored to your needs. 
             From web to enterprise apps, we turn your ideas into powerful digital products.
             </p>
             <div className="flex gap-[12px]">
@@ -86,7 +86,7 @@ function Footer() {
                 </div>
                 <div className="flex gap-[8px] items-center">
                   <IoMail />
-                  <p>codemelabs@gmail.com</p>
+                  <p>tjeevathuvarakan@gmail.com</p>
                 </div>
               </div>
             </div>

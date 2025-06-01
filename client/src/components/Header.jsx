@@ -47,7 +47,7 @@ function Header() {
                 alt="logo"
                 className="w-[112px] h-[50px] object-cover"
               /> */}
-              <h1 className="font-semibold text-[20px]">CodeMe Labs</h1>
+              <h1 className="font-semibold text-[20px]"> Jeeva's Site </h1>
             </Link>
 
             <div className="lg:block hidden">

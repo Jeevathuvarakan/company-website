@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from 'axios';
 import { MdCall } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import { FaLocationDot } from "react-icons/fa6";
 
 function HomeContactUs() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    message: '',
+  });
+
+   const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('http://127.0.0.1:8000/api/booking', formData);
+      alert("Message sent successfully!");
+      setFormData({ name: '', email: '', mobile: '', message: '' });
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
+
   return (
     //main div
     <>
@@ -78,7 +107,7 @@ function HomeContactUs() {
               <h1 className="text-[#151515] capitalize lg:text-[32px] md:text-[24px] text-[20px] font-bold  lg:leading-[58px]">
                 Fill the Form Below
               </h1>
-              <form className="w-full ">
+              <form className="w-full onSubmit={handleSubmit}">
                 <div className="flex flex-col gap-[18px] ">
                   <div className="flex md:gap-[20px] gap-[18px] md:flex-row flex-col w-full">
                     <div className=" w-full flex flex-col gap-[6px]">
@@ -86,6 +115,8 @@ function HomeContactUs() {
                       <input
                         type="text"
                         name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         className="w-full h-[50px] p-[15px] text-sm bg-[#F7F7F7] text-[#333] rounded-md"
                         placeholder="Your Name"
                         required
@@ -96,6 +127,8 @@ function HomeContactUs() {
                       <input
                         type="email"
                         name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         className="w-full h-[50px]  p-[15px] text-sm bg-[#F7F7F7] text-[#333] rounded-md"
                         placeholder="Your Email"
                         required
@@ -103,12 +136,15 @@ function HomeContactUs() {
                     </div>
                   </div>
                   <div className="flex flex-col gap-[6px]">
-                    <label className="text-[16px] font-semibold">Subject</label>
+                    <label className="text-[16px] font-semibold">Mobile :</label>
                     <input
-                      type="subject"
-                      name="subject"
-                      className="w-full h-[50px]  p-[15px] text-sm bg-[#fff] text-[#333] rounded-md"
-                      placeholder="Your Subject"
+                      type="tel"
+                      name="mobile"
+                      value={formData.mobile}
+                      onChange={handleChange}
+                      id="mobile"
+                      className="form-control w-full h-[50px]  p-[15px] text-sm bg-[#fff] text-[#333] rounded-md"
+                      placeholder="e.g., +94712345678"
                       required
                     />
                   </div>
@@ -116,14 +152,16 @@ function HomeContactUs() {
                     <label className="text-[16px] font-semibold">Message</label>
                     <textarea
                       type="text"
-                      name="subject"
+                      name="message"
+                      value={formData.message}
+                        onChange={handleChange}
                       className="w-full h-[120px]  p-[15px] text-sm bg-[#F7F7F7] text-[#333] rounded-md"
                       placeholder="Your Message"
                       required
                     />
                   </div>
                   <div className="">
-                    <button className=" text-[16px] text-white  px-[24px] py-[12px] w-full bg-[#0067ff] rounded-md font-medium  hover:bg-[#2c2ea8] ">
+                    <button className=" text-[16px] text-white  px-[24px] py-[12px] w-full bg-[#0067ff] rounded-md font-medium  hover:bg-[#242971] ">
                       SUBMIT NOW
                     </button>
                   </div>
